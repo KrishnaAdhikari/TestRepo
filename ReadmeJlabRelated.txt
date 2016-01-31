@@ -70,5 +70,29 @@ ifarm1401> git status
 #
 #       ReadmeJlabRelated.txt~
 no changes added to commit (use "git add" and/or "git commit -a")
+ifarm1401> git add *
+ifarm1401> git commit -m "Just another commit test. This time from JLab machine"
+[master 6e49876] Just another commit test. This time from JLab machine
+ 2 files changed, 74 insertions(+), 0 deletions(-)
+ create mode 100644 ReadmeJlabRelated.txt~
+ifarm1401> git push
+Username: 
+Password: 
+error: The requested URL returned error: 403 Forbidden while accessing https://github.com/KrishnaAdhikari/TestRepo/info/refs
+
+   (kp: I think I typed KPAdhikari instead of KrishnaAdhikari for username
+        therefore, it showed error. When I typed it right, it worked. See below.)
+
+fatal: HTTP request failed
+ifarm1401> git push
+Username: 
+Password: 
+Counting objects: 8, done.
+Delta compression using up to 48 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 3.04 KiB, done.
+Total 7 (delta 1), reused 0 (delta 0)
+To https://github.com/KrishnaAdhikari/TestRepo
+   fca232a..6e49876  master -> master
 ifarm1401>
 
